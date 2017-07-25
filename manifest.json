@@ -1,0 +1,35 @@
+{
+"update_url":		"http://clients2.google.com/service/update2/crx",
+"name":				"QnQ Canonical Inspector",
+"version":			"0.3.0",
+"manifest_version": 2,
+"description":		"Inspect the Canonical URL of a website",
+"homepage_url":		"https://www.qnq.com.au/qnq-canonical-inspector/",
+"background": {
+	"scripts":		["app.js"]
+	},
+"permissions": [
+					"tabs",
+					"http://*/*",
+					"https://*/*"
+		],
+"content_scripts": [{
+	"js": [			"overlay.js"
+		],
+	"matches": [
+					"http://*/*", 
+					"https://*/*"
+		]
+	}],
+"icons": {
+	"16": 			"16.png",
+	"48": 			"48.png",
+	"128": 			"128.png"
+	},
+"options_page": 	"options.html",
+"page_action": {
+	"default_icon": "grey.png",
+	"default_title":"QnQ Canonical Inspector"
+	},
+"content_security_policy":"script-src 'self'; object-src 'self'"
+}
