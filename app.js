@@ -54,7 +54,7 @@ function showPageAction(tab_id, canonical_url, tab_url) {
 			});
 			chrome.pageAction.setIcon({
 				tabId: tab_id,
-				path: 'grey.png'
+				path: 'green.png'
 			});
 		}
 		chrome.pageAction.show(tab_id);
