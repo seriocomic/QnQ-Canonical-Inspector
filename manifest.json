@@ -4,7 +4,7 @@
 "version":			"0.3.1",
 "manifest_version": 2,
 "description":		"Inspect the Canonical URL of a website",
-"homepage_url":		"https://www.qnq.com.au/qnq-canonical-inspector/",
+"homepage_url":		"https://www.qnq.com.au/projects/qnq-canonical-inspector/",
 "background": {
 	"scripts":		["app.js"]
 	},
